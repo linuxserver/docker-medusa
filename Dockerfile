@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python:3.5
+FROM lsiobase/alpine.python
 MAINTAINER sparklyballs
 
 # set version label
@@ -19,10 +19,10 @@ RUN \
 	file \
 	g++ \
 	gcc \
-	libressl-dev \
 	libtool \
 	make \
-	ncurses-dev && \
+	ncurses-dev \
+	openssl-dev && \
 
 # compile mediainfo packages
  curl -o \
