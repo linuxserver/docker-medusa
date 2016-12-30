@@ -19,10 +19,10 @@ RUN \
 	file \
 	g++ \
 	gcc \
+	libressl-dev \
 	libtool \
 	make \
-	ncurses-dev \
-	openssl-dev && \
+	ncurses-dev && \
 
 # compile mediainfo packages
  curl -o \
