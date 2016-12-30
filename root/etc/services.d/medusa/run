@@ -2,4 +2,4 @@
 
 exec \
 	s6-setuidgid abc python /app/medusa/SickBeard.py \
-	--datadir /config
+	--nolaunch --datadir /config
