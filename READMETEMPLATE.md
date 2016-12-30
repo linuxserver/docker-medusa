@@ -10,23 +10,27 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# <image-name>
+# linuxserver/medusa
+[![](https://images.microbadger.com/badges/version/linuxserver/medusa.svg)](https://microbadger.com/images/linuxserver/medusa "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/medusa.svg)](http://microbadger.com/images/linuxserver/medusa "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/medusa.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/medusa.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-medusa)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-medusa/)
+[hub]: https://hub.docker.com/r/linuxserver/medusa/
 
-Provide a short, concise description of the application. No more than two SHORT paragraphs. Link to sources where possible and include an image illustrating your point if necessary. Point users to the original applications website, as that's the best place to get support - not here.
+[Medusa][medusaurl], automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.
 
-Our Plex container has immaculate docs so follow that if in doubt for layout.
-
-`IMPORTANT, replace all instances of <image-name> with the correct dockerhub repo (ie linuxserver/plex) and <container-name> information (ie, plex)`
+[![medusa](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-readme.png)][medusaurl]
+[medusaurl]: https://github.com/pymedusa/Medusa
 
 ## Usage
 
 ```
 docker create \
-  --name=<container-name> \
-  -v <path to data>:/config \
-  -e PGID=<gid> -e PUID=<uid>  \
-  -p 1234:1234 \
-  <image-name>
+  --name=medusa \
+-v <path to config>:/config \
+-v <path to downloads>:/downloads \
+-v <path to tv-shows>:/tv \
+-e PGID=<gid> -e PUID=<uid>  \
+-e TZ=<timezone> \
+-p 8081:8081 \
+  linuxserver/medusa
 ```
 
 ## Parameters
@@ -38,12 +42,16 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 
-* `-p 1234` - the port(s)
-* `-v /config` - explain what lives here
+* `-p 8081` - the port(s)
+* `-v /config` - where medusa should store config files.
+* `-v /downloads` - your downloads folder
+* `-v /tv` - your tv-shows folder
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e TZ` for timezone information, eg Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
+
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it medusa /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -58,22 +66,22 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-Insert a basic user guide here to get a n00b up and running with the software inside the container. DELETE ME
+Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui.
 
 
 ## Info
 
-* Shell access whilst the container is running: `docker exec -it <container-name> /bin/bash`
-* To monitor the logs of the container in realtime: `docker logs -f <container-name>`
+* Shell access whilst the container is running: `docker exec -it medusa /bin/bash`
+* To monitor the logs of the container in realtime: `docker logs -f medusa`
 
 * container version number 
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' <container-name>`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' medusa`
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' <image-name>`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/medusa`
 
 ## Versions
 
-+ **dd.MM.yy:** This is the standard Version type now.
++ **dd.MM.yy:** Initial Release.
