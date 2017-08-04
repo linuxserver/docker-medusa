@@ -19,11 +19,6 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 [![medusa](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-readme.png)][appurl]
 
-
-# DMCA Notice
-Due to a [DMCA notice](https://github.com/github/dmca/blob/master/2017/2017-07-17-SiCKRAGE.md) affecting the github repository that this image pulls from on first run, the image will currently not function for new users and existing users will see errors about not being able to reach the github repo in their logs.
-This is a situation beyond our control, but we will be watching to see the outcome before deciding upon any further action on our part.
-
 ## Usage
 
 ```
@@ -89,6 +84,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **05.08.17:** Internal git pull instead of at runtime.
 + **25.05.17:** Rebase to alpine 3.6.
 + **07.02.17:** Rebase to alpine 3.5.
 + **02.01.17:** Initial Release.

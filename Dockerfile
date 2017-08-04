@@ -50,6 +50,9 @@ RUN \
  cd /tmp/mediainfo/MediaInfo/Project/GNU/CLI && \
 	make install && \
 
+# install app
+ git clone --depth=1 https://github.com/pymedusa/Medusa /app/medusa && \
+
 # cleanup
  apk del --purge \
 	build-dependencies && \
