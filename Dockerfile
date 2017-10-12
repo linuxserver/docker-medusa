@@ -6,58 +6,14 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# package version
-ARG MEDIAINF_VER="0.7.90"
-
-# install build packages
+# install packages
 RUN \
- apk add --no-cache --virtual=build-dependencies \
-	autoconf \
-	automake \
-	cppunit-dev \
-	curl-dev \
-	file \
-	g++ \
-	gcc \
-	libressl-dev \
-	libtool \
-	make \
-	ncurses-dev && \
-
-# compile mediainfo packages
- curl -o \
- /tmp/libmediainfo.tar.gz -L \
-	"http://mediaarea.net/download/binary/libmediainfo0/${MEDIAINF_VER}/MediaInfo_DLL_${MEDIAINF_VER}_GNU_FromSource.tar.gz" && \
- curl -o \
- /tmp/mediainfo.tar.gz -L \
-	"http://mediaarea.net/download/binary/mediainfo/${MEDIAINF_VER}/MediaInfo_CLI_${MEDIAINF_VER}_GNU_FromSource.tar.gz" && \
- mkdir -p \
-	/tmp/libmediainfo \
-	/tmp/mediainfo && \
- tar xf /tmp/libmediainfo.tar.gz -C \
-	/tmp/libmediainfo --strip-components=1 && \
- tar xf /tmp/mediainfo.tar.gz -C \
-	/tmp/mediainfo --strip-components=1 && \
-
- cd /tmp/libmediainfo && \
-	./SO_Compile.sh && \
- cd /tmp/libmediainfo/ZenLib/Project/GNU/Library && \
-	make install && \
- cd /tmp/libmediainfo/MediaInfoLib/Project/GNU/Library && \
-	make install && \
- cd /tmp/mediainfo && \
-	./CLI_Compile.sh && \
- cd /tmp/mediainfo/MediaInfo/Project/GNU/CLI && \
-	make install && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/testing \
+	mediainfo && \
 
 # install app
- git clone --depth=1 https://github.com/pymedusa/Medusa /app/medusa && \
-
-# cleanup
- apk del --purge \
-	build-dependencies && \
- rm -rf \
-	/tmp/*
+ git clone --depth=1 https://github.com/pymedusa/Medusa /app/medusa
 
 # copy local files
 COPY root/ /
