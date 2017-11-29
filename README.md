@@ -84,6 +84,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **29.11.17:** Add py-gdbm for subtitles support.
 + **26.10.17:** Mediainfo moved from testing to community repo.
 + **10.10.17:** Use repo version of mediainfo to shorten build time.
 + **05.08.17:** Internal git pull instead of at runtime.
