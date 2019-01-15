@@ -24,7 +24,7 @@ pipeline {
     MULTIARCH='true'
     CI='true'
     CI_WEB='true'
-    CI_PORT='8001'
+    CI_PORT='8081'
     CI_SSL='false'
     CI_DELAY='120'
     CI_DOCKERENV='TZ=US/Pacific'
@@ -192,7 +192,7 @@ pipeline {
               set -e
               TEMPDIR=$(mktemp -d)
               docker pull linuxserver/jenkins-builder:latest
-              docker run --rm -e CONTAINER_NAME=${CONTAINER_NAME} -e GITHUB_BRANCH=master -v ${TEMPDIR}:/ansible/jenkins linuxserver/jenkins-builder:latest 
+              docker run --rm -e CONTAINER_NAME=${CONTAINER_NAME} -e GITHUB_BRANCH=master -v ${TEMPDIR}:/ansible/jenkins linuxserver/jenkins-builder:latest
               docker pull linuxserver/doc-builder:latest
               docker run --rm -e CONTAINER_NAME=${CONTAINER_NAME} -e GITHUB_BRANCH=master -v ${TEMPDIR}:/ansible/readme linuxserver/doc-builder:latest
               if [ "$(md5sum ${TEMPDIR}/${LS_REPO}/Jenkinsfile | awk '{ print $1 }')" != "$(md5sum Jenkinsfile | awk '{ print $1 }')" ] || [ "$(md5sum ${TEMPDIR}/${CONTAINER_NAME}/README.md | awk '{ print $1 }')" != "$(md5sum README.md | awk '{ print $1 }')" ]; then
