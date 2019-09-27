@@ -5,7 +5,9 @@ ARG BUILD_DATE
 ARG VERSION
 ARG MEDUSA_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="sparklyballs,aptalca"
+
+ENV LANG='en_US.UTF-8'
 
 RUN \
  echo "**** install packages ****" && \
