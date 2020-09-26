@@ -110,7 +110,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use e.g. Europe/London |
-| `-v /config` | Cardigann config |
+| `-v /config` | Medusa config |
 | `-v /downloads` | Download location |
 | `-v /tv` | TV Shows location |
 
@@ -148,7 +148,9 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [Medusa](https://pymedusa.com/).
+Web interface is at `<your ip>:8081`. 
+
+Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [Medusa](https://pymedusa.com/).
 
 
 ## Docker Mods
