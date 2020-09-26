@@ -15,7 +15,7 @@ available_architectures:
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Cardigann config" }
+  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Medusa config" }
   - { vol_path: "/downloads", vol_host_path: "<path to downloads>", desc: "Download location" }
   - { vol_path: "/tv", vol_host_path: "<path to tv shows>", desc: "TV Shows location" }
 param_usage_include_ports: true
@@ -28,7 +28,9 @@ param_env_vars:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
+  Web interface is at `<your ip>:8081`. 
+  
+  Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
 
 # changelog
 changelogs:
