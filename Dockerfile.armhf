@@ -24,6 +24,7 @@ RUN \
     py3-idna \
     py3-openssl \
     py3-urllib3 \
+    ffmpeg \
     python3 && \
   echo "**** install unrar from source ****" && \
   mkdir /tmp/unrar && \
