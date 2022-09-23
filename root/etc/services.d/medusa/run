@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
+export MEDUSA_COMMIT_BRANCH=master
+
 exec \
     s6-setuidgid abc python3 /app/medusa/start.py \
     --nolaunch --datadir /config
