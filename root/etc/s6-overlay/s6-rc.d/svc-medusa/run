@@ -1,7 +1,9 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 export MEDUSA_COMMIT_BRANCH=master
 
 exec \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 8081" \
     s6-setuidgid abc python3 /app/medusa/start.py \
     --nolaunch --datadir /config

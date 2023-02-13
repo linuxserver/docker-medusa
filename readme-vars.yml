@@ -15,9 +15,9 @@ available_architectures:
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Medusa config" }
-  - { vol_path: "/downloads", vol_host_path: "<path to downloads>", desc: "Download location" }
-  - { vol_path: "/tv", vol_host_path: "<path to tv shows>", desc: "TV Shows location" }
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Medusa config" }
+  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Download location" }
+  - { vol_path: "/tv", vol_host_path: "/path/to/tv/shows", desc: "TV Shows location" }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8081", internal_port: "8081", port_desc: "The port for the Medusa webui" }
@@ -34,6 +34,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3." }
   - { date: "12.09.22:", desc: "Install ffmpeg for postprocessing." }
   - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
   - { date: "28.02.22:", desc: "Install python3 requirements for app." }
