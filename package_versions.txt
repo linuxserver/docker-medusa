@@ -21,8 +21,8 @@ cryptography            38.0.3                 python
 curl                    7.88.1-r1              apk     
 dark                    0.1.0                  npm     
 dbus-libs               1.14.4-r0              apk     
-ffmpeg                  5.1.2-r1               apk     
-ffmpeg-libs             5.1.2-r1               apk     
+ffmpeg                  5.1.2-r2               apk     
+ffmpeg-libs             5.1.2-r2               apk     
 flac-libs               1.4.2-r0               apk     
 fontconfig              2.14.1-r0              apk     
 freetype                2.12.1-r0              apk     
