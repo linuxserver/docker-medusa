@@ -1,6 +1,10 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
+if [[ ! -L "/app/medusa/Session.cfg" ]]; then
+    ln -s /config/Session.cfg /app/medusa/Session.cfg
+fi
+
 # permissions
 lsiown -R abc:abc \
     /config
