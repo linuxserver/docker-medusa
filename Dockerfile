@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.17
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
-ARG UNRAR_VERSION=6.1.7
+ARG UNRAR_VERSION=6.2.8
 ARG BUILD_DATE
 ARG VERSION
 ARG MEDUSA_RELEASE
