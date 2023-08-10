@@ -26,6 +26,7 @@ app_setup_block_enabled: true
 app_setup_block: "Web interface is at `<your ip>:8081`. \n\nSet paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).\n"
 # changelog
 changelogs:
+  - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
   - {date: "11.07.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "06.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3."}
