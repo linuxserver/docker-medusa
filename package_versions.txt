@@ -137,11 +137,11 @@ py3-cryptography                                                41.0.3-r0       
 py3-cryptography-pyc                                            41.0.3-r0               apk     
 py3-idna                                                        3.4-r4                  apk     
 py3-idna-pyc                                                    3.4-r4                  apk     
-py3-openssl                                                     23.1.1-r1               apk     
-py3-openssl-pyc                                                 23.1.1-r1               apk     
+py3-openssl                                                     23.2.0-r0               apk     
+py3-openssl-pyc                                                 23.2.0-r0               apk     
 py3-urllib3                                                     1.26.15-r1              apk     
 py3-urllib3-pyc                                                 1.26.15-r1              apk     
-pyOpenSSL                                                       23.1.1                  python  
+pyOpenSSL                                                       23.2.0                  python  
 pyc                                                             0.1-r0                  apk     
 pycparser                                                       2.21                    python  
 python3                                                         3.11.5-r0               apk     
