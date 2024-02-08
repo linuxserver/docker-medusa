@@ -258,7 +258,7 @@ terminal_size                 0.2.6                  rust-crate
 thiserror                     1.0.40                 rust-crate  
 thiserror-impl                1.0.40                 rust-crate  
 tinyxml2                      9.0.0-r2               apk         
-tzdata                        2023d-r0               apk         
+tzdata                        2024a-r0               apk         
 unicode-ident                 1.0.8                  rust-crate  
 unicode-width                 0.1.10                 rust-crate  
 urllib3                       1.26.18                python      
