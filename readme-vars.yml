@@ -21,9 +21,9 @@ param_ports:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  "Web interface is at `<your ip>:8081`.
+  Web interface is at `<your ip>:8081`.
 
-  Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }})."
+  Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
 
 # changelog
 changelogs:
