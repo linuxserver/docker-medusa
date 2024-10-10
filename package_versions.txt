@@ -1,5 +1,7 @@
 NAME                          VERSION                TYPE                       
 MediaInfo                     21.03.0.0              dotnet      (+1 duplicate)  
+Medusa                        UNKNOWN                npm                         
+Medusa-bower                  UNKNOWN                npm                         
 WinRAR                        5.91.0                 dotnet                      
 alpine-baselayout             3.4.3-r2               apk                         
 alpine-baselayout-data        3.4.3-r2               apk                         
