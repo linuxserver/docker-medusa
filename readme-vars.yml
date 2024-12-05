@@ -12,7 +12,7 @@ available_architectures:
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
   - {vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Download location"}
   - {vol_path: "/tv", vol_host_path: "/path/to/tv/shows", desc: "TV Shows location"}
 param_usage_include_ports: true
@@ -24,6 +24,49 @@ param_env_vars:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: "Web interface is at `<your ip>:8081`. \n\nSet paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).\n"
+# init diagram
+init_diagram: |
+  "medusa:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-medusa-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    init-config -> init-medusa-config
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-medusa
+    svc-medusa -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.19"
+  }
+  "medusa:latest" <- Base Images
 # changelog
 changelogs:
   - {date: "08.01.24:", desc: "Rebase to Alpine 3.19."}
