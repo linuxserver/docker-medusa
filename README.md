@@ -59,7 +59,7 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-Web interface is at `<your ip>:8081`. 
+Web interface is at `<your ip>:8081`.
 
 Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [Medusa](https://pymedusa.com/).
 
@@ -283,6 +283,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **02.03.25:** - Rebase to Alpine 3.21.
 * **08.01.24:** - Rebase to Alpine 3.19.
 * **07.10.23:** - Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar).
 * **10.08.23:** - Bump unrar to 6.2.10.

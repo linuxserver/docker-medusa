@@ -19,57 +19,18 @@ param_volumes:
 param_usage_include_ports: true
 param_ports:
   - {external_port: "8081", internal_port: "8081", port_desc: "The port for the Medusa webui"}
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use e.g. Europe/London"}
+readonly_supported: false
+nonroot_supported: false
 # application setup block
 app_setup_block_enabled: true
-app_setup_block: "Web interface is at `<your ip>:8081`. \n\nSet paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).\n"
-# init diagram
-init_diagram: |
-  "medusa:latest": {
-    docker-mods
-    base {
-      fix-attr +\nlegacy cont-init
-    }
-    docker-mods -> base
-    legacy-services
-    custom services
-    init-services -> legacy-services
-    init-services -> custom services
-    custom services -> legacy-services
-    legacy-services -> ci-service-check
-    init-migrations -> init-adduser
-    init-os-end -> init-config
-    init-config -> init-config-end
-    init-medusa-config -> init-config-end
-    init-os-end -> init-crontab-config
-    init-mods-end -> init-custom-files
-    base -> init-envfile
-    init-config -> init-medusa-config
-    base -> init-migrations
-    base -> init-mods
-    init-config-end -> init-mods
-    init-mods -> init-mods-end
-    init-mods-package-install -> init-mods-end
-    init-mods -> init-mods-package-install
-    base -> init-os-end
-    init-adduser -> init-os-end
-    init-envfile -> init-os-end
-    init-migrations -> init-os-end
-    init-custom-files -> init-services
-    init-mods-end -> init-services
-    init-services -> svc-cron
-    svc-cron -> legacy-services
-    init-services -> svc-medusa
-    svc-medusa -> legacy-services
-  }
-  Base Images: {
-    "baseimage-alpine:3.19"
-  }
-  "medusa:latest" <- Base Images
+app_setup_block: |
+  Web interface is at `<your ip>:8081`.
+
+  Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
+
 # changelog
 changelogs:
+  - {date: "02.03.25:", desc: "Rebase to Alpine 3.21."}
   - {date: "08.01.24:", desc: "Rebase to Alpine 3.19."}
   - {date: "07.10.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
   - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}

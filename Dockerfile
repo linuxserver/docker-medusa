@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/unrar:latest as unrar
+FROM ghcr.io/linuxserver/unrar:latest AS unrar
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.21
 
 # set version label
 ARG BUILD_DATE
@@ -21,10 +21,6 @@ RUN \
   apk add -U --update --no-cache \
     ffmpeg \
     mediainfo \
-    py3-chardet \
-    py3-idna \
-    py3-openssl \
-    py3-urllib3 \
     python3 && \
   echo "**** install app ****" && \
   if [ -z ${MEDUSA_RELEASE+x} ]; then \
@@ -38,6 +34,14 @@ RUN \
     "https://github.com/pymedusa/Medusa/archive/${MEDUSA_RELEASE}.tar.gz" && \
   tar xf /tmp/medusa.tar.gz -C \
     /app/medusa --strip-components=1 && \
+  cd /app/medusa && \
+  python3 -m venv /lsiopy && \
+  pip install -U --no-cache-dir \
+    pip \
+    setuptools \
+    wheel && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.21/ -r requirements.txt && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** clean up ****" && \
   apk del --purge \
     build-dependencies && \
