@@ -3,7 +3,7 @@
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
 [![Blog](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
-[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
+[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://linuxserver.io/discord "realtime support / chat with the community and the team.")
 [![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
 [![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
 [![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
@@ -20,7 +20,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 Find us at:
 
 * [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
-* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
+* [Discord](https://linuxserver.io/discord) - realtime support / chat with the community and the team.
 * [Discourse](https://discourse.linuxserver.io) - post on our community forum.
 * [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
@@ -59,13 +59,16 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-"Web interface is at `<your ip>:8081`.
+Web interface is at `<your ip>:8081`.
 
-Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [Medusa](https://pymedusa.com/)."
+Set paths for downloads, tv-shows to match docker mappings via the webui, for more information check out [Medusa](https://pymedusa.com/).
 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
+
+>[!NOTE]
+>Unless a parameter is flaged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
@@ -110,7 +113,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 8081` | The port for the Medusa webui |
+| `-p 8081:8081` | The port for the Medusa webui |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
@@ -254,7 +257,8 @@ Below are the instructions for updating containers:
 
 ### Image Update Notifications - Diun (Docker Image Update Notifier)
 
-**tip**: We recommend [Diun](https://crazymax.dev/diun/) for update notifications. Other tools that automatically update containers unattended are not recommended or supported.
+>[!TIP]
+>We recommend [Diun](https://crazymax.dev/diun/) for update notifications. Other tools that automatically update containers unattended are not recommended or supported.
 
 ## Building locally
 
@@ -269,17 +273,17 @@ docker build \
   -t lscr.io/linuxserver/medusa:latest .
 ```
 
-The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
+The ARM variants can be built on x86_64 hardware and vice versa using `lscr.io/linuxserver/qemu-static`
 
 ```bash
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 ```
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
 ## Versions
 
-* **24.06.24:** - Rebase to Alpine 3.20.
+* **02.03.25:** - Rebase to Alpine 3.21.
 * **08.01.24:** - Rebase to Alpine 3.19.
 * **07.10.23:** - Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar).
 * **10.08.23:** - Bump unrar to 6.2.10.
