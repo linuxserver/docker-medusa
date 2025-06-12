@@ -257,7 +257,7 @@ proc-macro-error-attr         1.0.4                  rust-crate
 proc-macro2                   1.0.57                 rust-crate                   
 procps-ng                     4.0.4-r0               apk                          
 profilehooks                  1.12.0                 python                       
-pyc                           3.11.12-r1             apk                          
+pyc                           3.11.13-r0             apk                          
 pygithub                      1.45                   python                       
 pyjwt                         2.7.0                  python                       
 pymediainfo                   7.0.1                  python                       
@@ -265,9 +265,9 @@ pyparsing                     3.2.3                  python
 pysrt                         1.1.2                  python                       
 python-dateutil               2.8.2                  python                       
 python-twitter                3.5                    python                       
-python3                       3.11.12-r1             apk                          
-python3-pyc                   3.11.12-r1             apk                          
-python3-pycache-pyc0          3.11.12-r1             apk                          
+python3                       3.11.13-r0             apk                          
+python3-pyc                   3.11.13-r0             apk                          
+python3-pycache-pyc0          3.11.13-r0             apk                          
 pytimeparse                   1.1.8                  python                       
 pytrakt                       3.4.23                 python                       
 pytz                          2025.2                 python                       
