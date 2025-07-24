@@ -8,7 +8,7 @@ adba                          1.1.0                  python
 alpine-baselayout             3.4.3-r2               apk                          
 alpine-baselayout-data        3.4.3-r2               apk                          
 alpine-keys                   2.4-r1                 apk                          
-alpine-release                3.19.7-r0              apk                          
+alpine-release                3.19.8-r0              apk                          
 alsa-lib                      1.2.10-r0              apk                          
 anyhow                        1.0.71                 rust-crate                   
 anyhow                        1.0.75                 rust-crate                   
@@ -36,8 +36,8 @@ brotli-libs                   1.1.0-r1               apk
 busybox                       1.36.1-r19             apk                          
 busybox-binsh                 1.36.1-r19             apk                          
 c-ares                        1.27.0-r0              apk                          
-ca-certificates               20241121-r1            apk                          
-ca-certificates-bundle        20241121-r1            apk                          
+ca-certificates               20250619-r0            apk                          
+ca-certificates-bundle        20250619-r0            apk                          
 cachecontrol                  0.13.1                 python                       
 catatonit                     0.2.0-r0               apk                          
 certifi                       2023.7.22              python                       
