@@ -245,9 +245,9 @@ orc                           0.4.39-r0              apk
 os_str_bytes                  6.5.0                  rust-crate                   
 packaging                     24.2                   python                       
 paste                         1.0.12                 rust-crate                   
-pbr                           7.0.0                  python                       
+pbr                           7.0.1                  python                       
 pcre2                         10.42-r2               apk                          
-pint                          0.24.4                 python                       
+pint                          0.25                   python                       
 pip                           25.2                   python                       
 platformdirs                  4.2.2                  python                       
 platformdirs                  4.3.8                  python                       
