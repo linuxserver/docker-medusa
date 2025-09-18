@@ -260,7 +260,7 @@ pyc                           3.11.13-r0             apk
 pygithub                      1.45                   python                       
 pyjwt                         2.7.0                  python                       
 pymediainfo                   7.0.1                  python                       
-pyparsing                     3.2.3                  python                       
+pyparsing                     3.2.4                  python                       
 pysrt                         1.1.2                  python                       
 python-dateutil               2.8.2                  python                       
 python-twitter                3.5                    python                       
