@@ -8,7 +8,7 @@ adba                          1.1.0                  python
 alpine-baselayout             3.4.3-r2               apk                          
 alpine-baselayout-data        3.4.3-r2               apk                          
 alpine-keys                   2.4-r1                 apk                          
-alpine-release                3.19.8-r0              apk                          
+alpine-release                3.19.9-r0              apk                          
 alsa-lib                      1.2.10-r0              apk                          
 anyhow                        1.0.71                 rust-crate                   
 anyhow                        1.0.75                 rust-crate                   
@@ -43,7 +43,7 @@ catatonit                     0.2.0-r0               apk
 certifi                       2023.7.22              python                       
 cfg-if                        1.0.0                  rust-crate                   
 chardet                       5.2.0                  python                       
-charset-normalizer            3.4.3                  python                       
+charset-normalizer            3.4.4                  python                       
 cjson                         1.7.17-r0              apk                          
 clap                          4.0.32                 rust-crate                   
 clap_complete                 4.0.7                  rust-crate                   
@@ -115,7 +115,7 @@ harfbuzz                      8.3.0-r0               apk
 heck                          0.4.1                  rust-crate                   
 html5lib                      1.1                    python                       
 hwdata-pci                    0.377.2-r0             apk                          
-idna                          3.10                   python                       
+idna                          3.11                   python                       
 imdbpie                       5.6.5                  python                       
 importlib-metadata            8.0.0                  python                       
 inflect                       7.3.1                  python                       
@@ -256,7 +256,7 @@ proc-macro-error-attr         1.0.4                  rust-crate
 proc-macro2                   1.0.57                 rust-crate                   
 procps-ng                     4.0.4-r0               apk                          
 profilehooks                  1.12.0                 python                       
-pyc                           3.11.13-r0             apk                          
+pyc                           3.11.14-r0             apk                          
 pygithub                      1.45                   python                       
 pyjwt                         2.7.0                  python                       
 pymediainfo                   7.0.1                  python                       
@@ -264,9 +264,9 @@ pyparsing                     3.2.5                  python
 pysrt                         1.1.2                  python                       
 python-dateutil               2.8.2                  python                       
 python-twitter                3.5                    python                       
-python3                       3.11.13-r0             apk                          
-python3-pyc                   3.11.13-r0             apk                          
-python3-pycache-pyc0          3.11.13-r0             apk                          
+python3                       3.11.14-r0             apk                          
+python3-pyc                   3.11.14-r0             apk                          
+python3-pycache-pyc0          3.11.14-r0             apk                          
 pytimeparse                   1.1.8                  python                       
 pytrakt                       3.4.23                 python                       
 pytz                          2025.2                 python                       
