@@ -44,7 +44,7 @@ certifi                       2023.7.22              python
 cfg-if                        1.0.0                  rust-crate                   
 chardet                       5.2.0                  python                       
 charset-normalizer            3.4.4                  python                       
-cjson                         1.7.17-r0              apk                          
+cjson                         1.7.19-r0              apk                          
 clap                          4.0.32                 rust-crate                   
 clap_complete                 4.0.7                  rust-crate                   
 clap_derive                   4.0.21                 rust-crate                   
@@ -243,7 +243,7 @@ os_str_bytes                  6.5.0                  rust-crate
 packaging                     24.2                   python      (+1 duplicate)   
 paste                         1.0.12                 rust-crate                   
 pcre2                         10.42-r2               apk                          
-pip                           25.2                   python                       
+pip                           25.3                   python                       
 platformdirs                  4.2.2                  python                       
 platformdirs                  4.5.0                  python                       
 ppv-lite86                    0.2.17                 rust-crate                   
