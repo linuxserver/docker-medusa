@@ -1,6 +1,5 @@
 NAME                          VERSION                TYPE                        
 MediaInfo                     21.03.0.0              binary      (+1 duplicate)   
-MediaInfo                     24.12.0.0              binary                       
 Medusa                        UNKNOWN                npm                          
 Medusa-bower                  UNKNOWN                npm                          
 Simple Launcher               1.1.0.14               binary      (+5 duplicates)  
