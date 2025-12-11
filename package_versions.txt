@@ -179,7 +179,7 @@ libopenmpt              0.7.15-r0         apk
 libpanelw               6.5_p20250503-r0  apk                          
 libpciaccess            0.18.1-r0         apk                          
 libplacebo              6.338.2-r3        apk                          
-libpng                  1.6.51-r0         apk                          
+libpng                  1.6.53-r0         apk                          
 libproc2                4.0.4-r3          apk                          
 libpsl                  0.21.5-r3         apk                          
 libpulse                17.0-r5           apk                          
@@ -257,7 +257,7 @@ paste                   1.0.14            rust-crate
 pcre2                   10.46-r0          apk                          
 pip                     25.3              python                       
 platformdirs            4.2.2             python                       
-platformdirs            4.5.0             python                       
+platformdirs            4.5.1             python                       
 ppv-lite86              0.2.17            rust-crate                   
 proc-macro2             1.0.76            rust-crate                   
 procps-ng               4.0.4-r3          apk                          
