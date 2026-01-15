@@ -330,7 +330,7 @@ tinyvec                 1.9.0             rust-crate
 tinyxml2                11.0.0-r0         apk                          
 tmdbsimple              2.9.1             python                       
 tomli                   2.0.1             python                       
-tomli                   2.3.0             python                       
+tomli                   2.4.0             python                       
 tornado                 6.5.2             python                       
 tornroutes              0.5.1             python                       
 trans                   2.1.0             python                       
