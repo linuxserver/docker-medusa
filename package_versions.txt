@@ -47,7 +47,7 @@ cachecontrol            0.14.3            python
 catatonit               0.2.1-r0          apk                          
 certifi                 2025.10.5         python                       
 cfg-if                  1.0.0             rust-crate                   
-chardet                 7.2.0             python                       
+chardet                 7.3.0             python                       
 charset-normalizer      3.4.6             python                       
 cjson                   1.7.19-r0         apk                          
 clap                    4.4.14            rust-crate                   
@@ -177,7 +177,7 @@ libopenmpt              0.7.15-r0         apk
 libpanelw               6.5_p20250503-r0  apk                          
 libpciaccess            0.18.1-r0         apk                          
 libplacebo              6.338.2-r3        apk                          
-libpng                  1.6.55-r0         apk                          
+libpng                  1.6.56-r0         apk                          
 libproc2                4.0.4-r3          apk                          
 libpsl                  0.21.5-r3         apk                          
 libpulse                17.0-r5           apk                          
@@ -266,7 +266,7 @@ pygithub                1.53              python
 pyjwt                   2.10.1            python                       
 pymediainfo             7.0.1             python                       
 pyparsing               3.3.2             python                       
-pysubs2                 1.8.0             python                       
+pysubs2                 1.8.1             python                       
 python-dateutil         2.9.0.post0       python                       
 python-twitter          3.5               python                       
 python3                 3.12.12-r0        apk                          
@@ -326,7 +326,8 @@ thiserror-impl          1.0.56            rust-crate
 tinyvec                 1.9.0             rust-crate                   
 tinyxml2                11.0.0-r0         apk                          
 tmdbsimple              2.9.1             python                       
-tomli                   2.4.0             python      (+1 duplicate)   
+tomli                   2.4.0             python                       
+tomli                   2.4.1             python                       
 tornado                 6.5.2             python                       
 tornroutes              0.5.1             python                       
 trans                   2.1.0             python                       
