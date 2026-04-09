@@ -47,7 +47,7 @@ cachecontrol            0.14.3            python
 catatonit               0.2.1-r0          apk                          
 certifi                 2025.10.5         python                       
 cfg-if                  1.0.0             rust-crate                   
-chardet                 7.4.0.post2       python                       
+chardet                 7.4.1             python                       
 charset-normalizer      3.4.7             python                       
 cjson                   1.7.19-r0         apk                          
 clap                    4.4.14            rust-crate                   
@@ -59,7 +59,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                       
 cli-64                  UNKNOWN           binary                       
 cli-arm64               UNKNOWN           binary                       
-click                   8.3.1             python                       
+click                   8.3.2             python                       
 click-option-group      0.5.9             python                       
 cloudscraper            1.2.71            python                       
 colorchoice             1.0.0             rust-crate                   
@@ -254,7 +254,7 @@ paste                   1.0.14            rust-crate
 pcre2                   10.46-r0          apk                          
 pip                     26.0.1            python                       
 platformdirs            4.4.0             python                       
-platformdirs            4.9.4             python                       
+platformdirs            4.9.6             python                       
 ppv-lite86              0.2.17            rust-crate                   
 proc-macro2             1.0.76            rust-crate                   
 procps-ng               4.0.4-r3          apk                          
