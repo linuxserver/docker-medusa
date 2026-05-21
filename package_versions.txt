@@ -59,7 +59,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                       
 cli-64                  UNKNOWN           binary                       
 cli-arm64               UNKNOWN           binary                       
-click                   8.3.3             python                       
+click                   8.4.0             python                       
 click-option-group      0.5.9             python                       
 cloudscraper            1.2.71            python                       
 colorchoice             1.0.0             rust-crate                   
@@ -81,7 +81,7 @@ crossbeam-utils         0.8.19            rust-crate
 curl                    8.14.1-r2         apk                          
 dark                    0.1.0             npm                          
 dbus-libs               1.16.2-r1         apk                          
-decorator               5.2.1             python                       
+decorator               5.3.1             python                       
 deluge-client           1.10.2            python                       
 deprecated              1.2.18            python                       
 diskcache               5.6.3             python                       
@@ -315,7 +315,7 @@ sqlite-libs             3.49.2-r1         apk
 sratom                  0.6.18-r0         apk                          
 srt                     3.5.3             python                       
 ssl_client              1.37.0-r20        apk                          
-stevedore               5.7.0             python                       
+stevedore               5.8.0             python                       
 subliminal              2.2.1             python                       
 syn                     2.0.48            rust-crate                   
 tap                     1.0.1             rust-crate                   
