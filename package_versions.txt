@@ -78,7 +78,7 @@ crossbeam-deque         0.8.5             rust-crate
 crossbeam-epoch         0.9.18            rust-crate                   
 crossbeam-queue         0.3.11            rust-crate                   
 crossbeam-utils         0.8.19            rust-crate                   
-curl                    8.14.1-r2         apk                          
+curl                    8.14.1-r3         apk                          
 dark                    0.1.0             npm                          
 dbus-libs               1.16.2-r1         apk                          
 decorator               5.3.1             python                       
@@ -151,7 +151,7 @@ libbz2                  1.0.8-r6          apk
 libc                    0.2.155           rust-crate                   
 libc                    0.2.172           rust-crate                   
 libcrypto3              3.5.7-r0          apk                          
-libcurl                 8.14.1-r2         apk                          
+libcurl                 8.14.1-r3         apk                          
 libdav1d                1.5.1-r0          apk                          
 libdeflate              1.23-r0           apk                          
 libdovi                 3.3.1-r1          apk                          
@@ -216,7 +216,7 @@ mako                    1.3.10            python
 markdown2               2.5.4             python                       
 markupsafe              3.0.3             python                       
 maybe-rayon             0.1.1             rust-crate                   
-mbedtls                 3.6.6-r0          apk                          
+mbedtls                 3.6.7-r0          apk                          
 mediainfo               25.03-r0          apk                          
 memchr                  2.7.1             rust-crate                   
 minimal-lexical         0.2.1             rust-crate                   
@@ -253,7 +253,7 @@ packaging               26.0              python
 paste                   1.0.14            rust-crate                   
 pcre2                   10.46-r0          apk                          
 pip                     26.1.2            python                       
-platformdirs            4.10.0            python                       
+platformdirs            4.11.0            python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.17            rust-crate                   
 proc-macro2             1.0.76            rust-crate                   
@@ -307,7 +307,7 @@ six                     1.17.0            python
 skalibs-libs            2.14.4.0-r0       apk                          
 slim                    0.1.0             npm                          
 sord-libs               0.16.18-r0        apk                          
-soupsieve               2.8.4             python                       
+soupsieve               2.9.1             python                       
 soxr                    0.1.3-r7          apk                          
 speexdsp                1.2.1-r2          apk                          
 spirv-tools             1.4.313.0-r0      apk                          
@@ -334,7 +334,7 @@ trans                   2.1.0             python
 ttl-cache               1.6               python                       
 tvdbapiv2               1.0.1             python                       
 typing-extensions       4.16.0            python                       
-tzdata                  2026b-r0          apk                          
+tzdata                  2026c-r0          apk                          
 unicode-ident           1.0.12            rust-crate                   
 unicode-width           0.1.11            rust-crate                   
 urllib3                 2.5.0             python                       
