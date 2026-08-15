@@ -25,7 +25,7 @@ RUN \
   echo "**** install app ****" && \
   if [ -z ${MEDUSA_RELEASE+x} ]; then \
     MEDUSA_RELEASE=$(curl -sX GET "https://api.github.com/repos/pymedusa/Medusa/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   mkdir -p \
     /app/medusa && \
