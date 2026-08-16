@@ -47,8 +47,8 @@ cachecontrol            0.14.3            python
 catatonit               0.2.1-r0          apk                          
 certifi                 2025.10.5         python                       
 cfg-if                  1.0.0             rust-crate                   
-chardet                 7.5.1             python                       
-charset-normalizer      3.5.0             python                       
+chardet                 7.6.0             python                       
+charset-normalizer      3.5.1             python                       
 cjson                   1.7.19-r0         apk                          
 clap                    4.4.14            rust-crate                   
 clap_builder            4.4.14            rust-crate                   
@@ -253,7 +253,7 @@ packaging               26.0              python
 paste                   1.0.14            rust-crate                   
 pcre2                   10.46-r0          apk                          
 pip                     26.2.1            python                       
-platformdirs            4.11.2            python                       
+platformdirs            4.11.3            python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.17            rust-crate                   
 proc-macro2             1.0.76            rust-crate                   
@@ -261,7 +261,7 @@ procps-ng               4.0.4-r3          apk
 profilehooks            1.13.0            python                       
 profiling               1.0.13            rust-crate                   
 profiling-procmacros    1.0.13            rust-crate                   
-pyc                     3.12.13-r0        apk                          
+pyc                     3.12.14-r0        apk                          
 pygithub                1.53              python                       
 pyjwt                   2.10.1            python                       
 pymediainfo             7.0.1             python                       
@@ -269,9 +269,9 @@ pyparsing               3.3.2             python
 pysubs2                 1.8.1             python                       
 python-dateutil         2.9.0.post0       python                       
 python-twitter          3.5               python                       
-python3                 3.12.13-r0        apk                          
-python3-pyc             3.12.13-r0        apk                          
-python3-pycache-pyc0    3.12.13-r0        apk                          
+python3                 3.12.14-r0        apk                          
+python3-pyc             3.12.14-r0        apk                          
+python3-pycache-pyc0    3.12.14-r0        apk                          
 pytimeparse             1.1.8             python                       
 pytrakt                 3.4.35            python                       
 pyyaml                  6.0.3             python                       
@@ -346,7 +346,7 @@ validators              0.35.0            python
 vidstab                 1.1.1-r0          apk                          
 vulkan-loader           1.4.313.0-r0      apk                          
 wayland-libs-client     1.23.1-r3         apk                          
-webencodings            0.5.1             python                       
+webencodings            0.6.1             python                       
 wheel                   0.46.3            python                       
 wheel                   0.48.0            python                       
 wrapt                   1.17.3            python                       
