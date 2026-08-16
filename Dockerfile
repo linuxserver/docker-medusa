@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/unrar:latest AS unrar
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.22
+FROM ghcr.io/linuxserver/baseimage-alpine:3.23
 
 # set version label
 ARG BUILD_DATE
@@ -21,7 +21,8 @@ RUN \
   apk add -U --update --no-cache \
     ffmpeg \
     mediainfo \
-    python3 && \
+    python3 \
+    python3-gdbm && \
   echo "**** install app ****" && \
   if [ -z ${MEDUSA_RELEASE+x} ]; then \
     MEDUSA_RELEASE=$(curl -sX GET "https://api.github.com/repos/pymedusa/Medusa/releases/latest" \
@@ -40,7 +41,7 @@ RUN \
     pip \
     setuptools \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.22/ -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.23/ -r requirements.txt && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** clean up ****" && \
   apk del --purge \
