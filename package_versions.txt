@@ -61,7 +61,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                       
 cli-64                  UNKNOWN           binary                       
 cli-arm64               UNKNOWN           binary                       
-click                   8.4.2             python                       
+click                   8.5.0             python                       
 click-option-group      0.5.9             python                       
 cloudscraper            1.2.71            python                       
 colorchoice             1.0.4             rust-crate                   
@@ -224,7 +224,7 @@ minimal-lexical         0.2.1             rust-crate
 more-itertools          10.8.0            python                       
 mpdecimal               4.0.1-r0          apk                          
 mpg123-libs             1.33.3-r0         apk                          
-msgpack                 1.2.1             python                       
+msgpack                 1.2.2             python                       
 musl                    1.2.5-r23         apk                          
 musl-utils              1.2.5-r23         apk                          
 ncurses-terminfo-base   6.5_p20251123-r0  apk                          
@@ -251,7 +251,7 @@ paste                   1.0.15            rust-crate
 pastey                  0.1.0             rust-crate                   
 pcre2                   10.47-r0          apk                          
 pip                     26.2.1            python                       
-platformdirs            4.11.3            python                       
+platformdirs            4.11.5            python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.21            rust-crate                   
 proc-macro2             1.0.95            rust-crate                   
