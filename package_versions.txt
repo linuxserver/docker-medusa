@@ -20,7 +20,7 @@ anstyle-parse           0.2.7             rust-crate
 anstyle-query           1.1.3             rust-crate                   
 anyhow                  1.0.98            rust-crate  (+1 duplicate)   
 aom-libs                3.14.1-r0         apk                          
-apk-tools               3.0.7-r0          apk                          
+apk-tools               3.0.8-r0          apk                          
 appdirs                 1.4.4             python                       
 arg_enum_proc_macro     0.3.4             rust-crate                   
 arrayvec                0.7.6             rust-crate                   
@@ -81,7 +81,7 @@ crossbeam-deque         0.8.6             rust-crate
 crossbeam-epoch         0.9.18            rust-crate                   
 crossbeam-queue         0.3.12            rust-crate                   
 crossbeam-utils         0.8.21            rust-crate                   
-curl                    8.20.0-r0         apk                          
+curl                    8.22.0-r0         apk                          
 dark                    0.1.0             npm                          
 dbus-libs               1.16.2-r1         apk                          
 decorator               5.3.1             python                       
@@ -124,7 +124,7 @@ gui-arm64               UNKNOWN           binary
 harfbuzz                12.2.0-r0         apk                          
 html5lib                1.1               python                       
 hwdata-pci              0.401-r0          apk                          
-idna                    3.19              python                       
+idna                    3.20              python                       
 importlib-metadata      8.7.1             python                       
 interpolate_name        0.2.4             rust-crate                   
 is_terminal_polyfill    1.70.1            rust-crate                   
@@ -134,24 +134,24 @@ ivf                     0.1.4             rust-crate
 jaraco-context          6.1.0             python                       
 jaraco-functools        4.4.0             python                       
 jaraco-text             4.0.0             python                       
-jq                      1.8.1-r0          apk                          
+jq                      1.8.2-r0          apk                          
 json-c                  0.18-r1           apk                          
 jsonrpclib-pelix        0.4.3.4           python                       
 lab                     0.11.0            rust-crate                   
 lame-libs               3.100-r5          apk                          
 lcms2                   2.19-r0           apk                          
 libSvtAv1Enc            3.1.2-r0          apk                          
-libapk                  3.0.7-r0          apk                          
+libapk                  3.0.8-r0          apk                          
 libass                  0.17.4-r0         apk                          
 libasyncns              0.8-r4            apk                          
 libattr                 2.5.2-r2          apk                          
-libblkid                2.41.4-r0         apk                          
+libblkid                2.41.6-r1         apk                          
 libbluray               1.4.0-r0          apk                          
 libbsd                  0.12.2-r0         apk                          
 libbz2                  1.0.8-r6          apk                          
 libc                    0.2.172           rust-crate  (+1 duplicate)   
-libcrypto3              3.5.7-r0          apk                          
-libcurl                 8.20.0-r0         apk                          
+libcrypto3              3.5.8-r0          apk                          
+libcurl                 8.22.0-r0         apk                          
 libdav1d                1.5.2-r0          apk                          
 libdovi                 3.3.2-r0          apk                          
 libdrm                  2.4.131-r0        apk                          
@@ -169,7 +169,7 @@ libjxl                  0.11.2-r0         apk
 libltdl                 2.5.4-r2          apk                          
 libmd                   1.1.0-r0          apk                          
 libmediainfo            25.09-r0          apk                          
-libmount                2.41.4-r0         apk                          
+libmount                2.41.6-r1         apk                          
 libncursesw             6.5_p20251123-r0  apk                          
 libogg                  1.3.6-r0          apk                          
 libopenmpt              0.8.6-r0          apk                          
@@ -186,7 +186,7 @@ libsndfile              1.2.2-r2          apk
 libsodium               1.0.20-r1         apk                          
 libsrt                  1.5.3-r1          apk                          
 libssh                  0.11.4-r0         apk                          
-libssl3                 3.5.7-r0          apk                          
+libssl3                 3.5.8-r0          apk                          
 libstdc++               15.2.0-r2         apk                          
 libtheora               1.2.0-r0          apk                          
 libudfread              1.2.0-r0          apk                          
@@ -251,7 +251,7 @@ paste                   1.0.15            rust-crate
 pastey                  0.1.0             rust-crate                   
 pcre2                   10.48-r0          apk                          
 pip                     26.2.1            python                       
-platformdirs            4.11.7            python                       
+platformdirs            4.11.9            python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.21            rust-crate                   
 proc-macro2             1.0.95            rust-crate                   
@@ -350,7 +350,7 @@ wyz                     0.5.1             rust-crate
 x264-libs               0.164.3108-r1     apk                          
 x265-libs               4.1-r0            apk                          
 xvidcore                1.3.7-r2          apk                          
-xz-libs                 5.8.3-r0          apk                          
+xz-libs                 5.8.4-r0          apk                          
 y4m                     0.8.0             rust-crate                   
 zerocopy                0.8.25            rust-crate                   
 zimg                    3.0.6-r0          apk                          
