@@ -12,7 +12,7 @@ aligned-vec             0.6.4             rust-crate
 alpine-baselayout       3.7.2-r0          apk                          
 alpine-baselayout-data  3.7.2-r0          apk                          
 alpine-keys             2.6-r0            apk                          
-alpine-release          3.23.5-r0         apk                          
+alpine-release          3.23.6-r0         apk                          
 alsa-lib                1.2.14-r2         apk                          
 anstream                0.6.19            rust-crate                   
 anstyle                 1.0.11            rust-crate                   
@@ -44,8 +44,8 @@ brotli-libs             1.2.0-r0          apk
 busybox                 1.37.0-r30        apk                          
 busybox-binsh           1.37.0-r30        apk                          
 c-ares                  1.34.8-r0         apk                          
-ca-certificates         20260611-r0       apk                          
-ca-certificates-bundle  20260611-r0       apk                          
+ca-certificates         20260909-r0       apk                          
+ca-certificates-bundle  20260909-r0       apk                          
 cachecontrol            0.14.3            python                       
 catatonit               0.2.1-r0          apk                          
 certifi                 2025.10.5         python                       
@@ -156,7 +156,7 @@ libdav1d                1.5.2-r0          apk
 libdovi                 3.3.2-r0          apk                          
 libdrm                  2.4.131-r0        apk                          
 libeconf                0.8.3-r0          apk                          
-libexpat                2.8.4-r0          apk                          
+libexpat                2.8.5-r0          apk                          
 libffi                  3.5.2-r0          apk                          
 libflac                 1.4.3-r2          apk                          
 libgcc                  15.2.0-r2         apk                          
@@ -251,7 +251,7 @@ paste                   1.0.15            rust-crate
 pastey                  0.1.0             rust-crate                   
 pcre2                   10.48-r0          apk                          
 pip                     26.2.1            python                       
-platformdirs            4.11.9            python                       
+platformdirs            4.11.12           python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.21            rust-crate                   
 proc-macro2             1.0.95            rust-crate                   
@@ -262,7 +262,7 @@ pyc                     3.12.14-r0        apk
 pygithub                1.53              python                       
 pyjwt                   2.10.1            python                       
 pymediainfo             7.0.1             python                       
-pyparsing               3.3.2             python                       
+pyparsing               3.3.3             python                       
 pysubs2                 1.9.0             python                       
 python-dateutil         2.9.0.post0       python                       
 python-twitter          3.5               python                       
@@ -303,7 +303,7 @@ six                     1.17.0            python
 skalibs-libs            2.14.4.0-r0       apk                          
 slim                    0.1.0             npm                          
 sord-libs               0.16.18-r0        apk                          
-soupsieve               2.9.2             python                       
+soupsieve               2.10              python                       
 soxr                    0.1.3-r7          apk                          
 speexdsp                1.2.1-r2          apk                          
 spirv-tools             1.4.321.0-r1      apk                          
@@ -330,7 +330,7 @@ tornroutes              0.5.1             python
 ttl-cache               1.6               python                       
 tvdbapiv2               1.0.1             python                       
 typing-extensions       4.16.0            python                       
-tzdata                  2026c-r0          apk                          
+tzdata                  2026d-r0          apk                          
 unicode-ident           1.0.18            rust-crate                   
 unicode-width           0.2.1             rust-crate                   
 urllib3                 2.5.0             python                       
