@@ -81,7 +81,7 @@ crossbeam-deque         0.8.6             rust-crate
 crossbeam-epoch         0.9.18            rust-crate                   
 crossbeam-queue         0.3.12            rust-crate                   
 crossbeam-utils         0.8.21            rust-crate                   
-curl                    8.22.0-r0         apk                          
+curl                    8.23.0-r0         apk                          
 dark                    0.1.0             npm                          
 dbus-libs               1.16.2-r1         apk                          
 decorator               5.3.1             python                       
@@ -151,12 +151,12 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                          
 libc                    0.2.172           rust-crate  (+1 duplicate)   
 libcrypto3              3.5.9-r0          apk                          
-libcurl                 8.22.0-r0         apk                          
+libcurl                 8.23.0-r0         apk                          
 libdav1d                1.5.2-r0          apk                          
 libdovi                 3.3.2-r0          apk                          
 libdrm                  2.4.131-r0        apk                          
 libeconf                0.8.3-r0          apk                          
-libexpat                2.9.0-r0          apk                          
+libexpat                2.10.0-r0         apk                          
 libffi                  3.5.2-r0          apk                          
 libflac                 1.4.3-r2          apk                          
 libgcc                  15.2.0-r2         apk                          
@@ -240,7 +240,7 @@ num-integer             0.1.46            rust-crate
 num-rational            0.4.2             rust-crate                   
 num-traits              0.2.19            rust-crate                   
 numactl                 2.0.18-r0         apk                          
-oauthlib                4.0.0             python                       
+oauthlib                4.0.1             python                       
 once_cell               1.21.3            rust-crate                   
 oniguruma               6.9.10-r0         apk                          
 opus                    1.5.2-r1          apk                          
@@ -250,8 +250,8 @@ packaging               26.3              python
 paste                   1.0.15            rust-crate                   
 pastey                  0.1.0             rust-crate                   
 pcre2                   10.49-r0          apk                          
-pip                     26.2.2            python                       
-platformdirs            4.14.0            python                       
+pip                     26.3              python                       
+platformdirs            4.14.5            python                       
 platformdirs            4.4.0             python                       
 ppv-lite86              0.2.21            rust-crate                   
 proc-macro2             1.0.95            rust-crate                   
@@ -263,7 +263,7 @@ pygithub                1.53              python
 pyjwt                   2.10.1            python                       
 pymediainfo             7.0.1             python                       
 pyparsing               3.3.3             python                       
-pysubs2                 1.9.0             python                       
+pysubs2                 1.9.1             python                       
 python-dateutil         2.9.0.post0       python                       
 python-twitter          3.5               python                       
 python3                 3.12.16-r0        apk                          
@@ -303,7 +303,7 @@ six                     1.17.0            python
 skalibs-libs            2.14.4.0-r0       apk                          
 slim                    0.1.0             npm                          
 sord-libs               0.16.18-r0        apk                          
-soupsieve               3.0.4             python                       
+soupsieve               4.0.1             python                       
 soxr                    0.1.3-r7          apk                          
 speexdsp                1.2.1-r2          apk                          
 spirv-tools             1.4.321.0-r1      apk                          
